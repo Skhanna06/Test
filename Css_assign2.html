@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Css_assign2</title>
+</head>
+<body>
+    <h1><u>Different font-size of text!!</u></h1><br><br>
+        <div class = "pixel">
+            <p>Size : 10px </p>
+            <p>Pixels are relative to viewing device</p>   
+        </div>
+        <hr>
+        <div class = "root_element">
+            <p>Size : 2rem </p>
+            <p>Relative to font size of the root element</p>
+        </div>
+        <hr>
+        <div class ="width_view">
+            <p>Size : 2vw </p>
+            <p>Relative to 1% of the width of the viewport</p>
+        </div>
+        <hr>
+        <div class = "height_view">
+            <p>Size : 5vh </p>
+            <p>Relative to 1% of the height of the viewport</p>
+        </div>
+    <hr><br>
+
+    <h1>Let's apply Different Combinator</h1>
+
+        <h3>This is for descendent selector (space)</h3>
+        <div class ="combinator1">
+        <p >Paragraph 1 in the div.</p>
+        <p >Paragraph 2 in the div.</p>
+        </div>
+        <p>Outside div</p><hr>
+
+        <h3>This is for Child Selctor(>)</h3>
+        <div class="combinator2">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section>
+              <!-- not Child but Descendant -->
+              <p>Paragraph 3 in the div (inside a section element).</p>
+            </section>
+            <p>Paragraph 4 in the div.</p>
+        </div><hr>
+
+        <h3>This is for adjacent child selector</h3>
+            <div class="combinator3">
+                <p>Paragraph 1 in the div.</p>
+                <p>Paragraph 2 in the div.</p>
+            </div>
+            <p>Element that is directly after another specific element.</p>
+            <p>Paragraph 4. After a div.</p><hr>
+          
+          
+        <h3>This is for general sibling selector</h3>
+            <div class="combinator4">
+                <p>he general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+            </div>
+              
+              <p>Paragraph 1.</p>
+              <code>Some code.</code>
+              <p>Paragraph 2.</p><hr>
+
+
+</body>
+</html>
